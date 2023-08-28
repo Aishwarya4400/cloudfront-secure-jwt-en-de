@@ -61,7 +61,7 @@ export default function Home(props) {
 
   return username && token ? (
     <div className="container">
-      <h1 className="title">Simple Player JWT Token</h1>
+      <h1 className="title">HLS Player </h1>
 
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -97,16 +97,8 @@ export default function Home(props) {
         <Table className="DebugTable" variant="dark" responsive="lg">
           <tbody>
             <tr>
-              <th width={100}>URL:</th>
+              <th width={100}>HLS URL:</th>
               <td>{videoURL}</td>
-            </tr>
-            <tr>
-              <th>Playing:</th>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th> Token:</th>
-              <td>{token}</td>
             </tr>
           </tbody>
         </Table>
