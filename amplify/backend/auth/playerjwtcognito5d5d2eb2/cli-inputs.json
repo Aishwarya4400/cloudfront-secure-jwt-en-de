@@ -24,7 +24,8 @@
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
-    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientRefreshTokenValidity": 5,
+    "userpoolClientTokenValidityUnits": "minutes",
     "userpoolClientWriteAttributes": [
       "email"
     ],
