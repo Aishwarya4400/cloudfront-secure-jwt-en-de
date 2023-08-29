@@ -1,8 +1,6 @@
-var config = {};
 
-config.REGION = 'us-east-1'; // please replace with the cognito region id. region of the deployment, e.i us-east-1
-config.USERPOOLID = ''; // please add your cognito user pool id, you can run amplify auth console and select 'User Pool option'
-config.JWKS = ''; // please add the cognito well-known JWKS, please read step 5
-module.exports = config;
-
-/// version 0.1.7
+  var config = {};
+  config.REGION = 'us-east-1'
+  config.USERPOOLID = 'us-east-1_9NbQ4PINM'
+  config.JWKS = '{"keys":[{"alg":"RS256","e":"AQAB","kid":"kMRZ7Cb99aRGtMqAJfT5VPpGrnuEDGGP6+mZd/A8oBY=","kty":"RSA","n":"qfoxKx-M0zdUVUfPUz8Bj0_OpleekJQxGvppp7HaMeKMmM9LLabZa7cITAqYjcuqgqIqkzgoNYHMqmB24oPR-iHVXz7WuejJ0qY7lD_rxauN82OUgilOEyTRgPZN9IJk0buVP_7ueUoY4KzpvrGecQ_kf8XBqkdu1OnphUnpyyfKZbHsL_ykLlb-EIf_Fgn-WI42u_5uJACOvaptpot6ggfnND7aluTViuU19Ww_-Bmc8pCNETWbLJ3nc641lJ3hu-Ea7ry_dKPzPAMorfVJwULbiRi7YEGrC7OfPUbR-43b6u9QlC4HyhQaMwoz4fvVqbCRSudUyMZdtma9lwpFFQ","use":"sig"},{"alg":"RS256","e":"AQAB","kid":"3hIOMjhbcRgxxhC9YbJaUjmyLjAwO3fTM36bSQHL+XE=","kty":"RSA","n":"4EqhGLRTrqM8wpDk2MT9amd2SJw7OkJPxaKF0rFCaePIX5c9DGTuTwPWziHXjjfwqPEez9dLtLKqBybnswVgs1Dq_gp-bEb8dVgJqkZ3KWWnVCNRkvyiPD15WbxXlSh-pFcf1lkukQic0nwgTNBQ0voEMjkgGIFXXe4nl_Dep33rSpir_UffZE6zHeNnKGOGDDzlRbUFltISQtsSuyC9wrTVIWyeYSMme9ltwyeB4-nV1Am6rXi8EYadAKwO-67UjixjCZapbqXA6ZoZsKS7FyvBSf42GP14SK50w6hbXOc7bNnSxDer34DBk2EFfh5JRCRzouS81MhPq8D013Du_w","use":"sig"}]}'
+  module.exports = config;

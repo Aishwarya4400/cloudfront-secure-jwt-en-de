@@ -1,12 +1,19 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Home.css";
 import VideoPlayer from "./playerjs/";
 import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+//import _ from "videojs-contrib-quality-levels";
+//import qualitySelector from "videojs-hls-quality-selector";
+import videojs from "video.js";
+//import "./VideoJsPlayer.styles.css"; // styles
+import "video.js/dist/video-js.css"; // videoJs Default Styles
+import "videojs-contrib-quality-levels"; // videoJs Quality levels **
+import "videojs-hls-quality-selector"; 
 
 export default function Home(props) {
   console.log("HOME", props);
@@ -16,11 +23,13 @@ export default function Home(props) {
   const username = props.username;
   const token = props.token;
   const playerRef = useRef(null);
+//  const videoRef = useRef();
+  const [player, setPlayer] = useState(undefined);
 
   const [videoURL, setvideoURL] = useState(
     "http://d2qohgpffhaffh.cloudfront.net/HLS/vanlife/withad/sdr_uncage_vanlife_admarker_60sec.m3u8"
   );
-
+//  const [player] = useState(undefined);
   const videoJsOptions = {
     autoplay: "muted", //mute audio when page loads, but auto play video
     controls: true,
@@ -37,6 +46,11 @@ export default function Home(props) {
     ],
   };
 
+  //useEffect(() => {
+//  if (player) {
+    //  player.hlsQualitySelector({ displayCurrentQuality: true });
+  //  }
+//  }, [player]);
   const handlePlayerReady = (player) => {
     player.on("waiting", () => {
       console.log("player is waiting");
