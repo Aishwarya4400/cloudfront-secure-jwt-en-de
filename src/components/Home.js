@@ -27,7 +27,7 @@ export default function Home(props) {
   const [player, setPlayer] = useState(undefined);
 
   const [videoURL, setvideoURL] = useState(
-    "http://d2qohgpffhaffh.cloudfront.net/HLS/vanlife/withad/sdr_uncage_vanlife_admarker_60sec.m3u8"
+    "https://d2v0tuuxvuh4w3.cloudfront.net/c61e9598-6610-47ce-b0ec-6030d36f7c1c/hls/1080-video.m3u8"
   );
 //  const [player] = useState(undefined);
   const videoJsOptions = {

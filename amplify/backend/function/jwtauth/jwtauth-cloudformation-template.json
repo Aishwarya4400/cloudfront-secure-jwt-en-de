@@ -44,7 +44,7 @@
               "Fn::Join": [
                 "",
                 [
-                  "jwtauth3",
+                  "jwtauth",
                   "-",
                   {
                     "Ref": "env"
